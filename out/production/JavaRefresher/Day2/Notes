@@ -1,0 +1,30 @@
+Array Limitation
+1) Fixed in size. So we cant change in runtime
+2) Array uses same datatype. (primitive)
+3) Readymade methods (add, remove, search, sort)
+
+Collection Framework
+1) Growable in nature
+2) Non-Primitive
+3) Store homogenous and heterogeneous datatype
+4) readymade methods are available
+
+
+List Interface
+--------------
+1) List can store elements in order of sequence
+2) Duplicates are allowed
+3) List works on index based (0,1....)
+4) List is ordered
+5) Null values can be inserted
+others
+1) Growable in nature
+2) Non-Primitive
+3) Store homogenous and heterogeneous datatype
+4) readymade methods are available
+
+
+Stack:
+Last-in - First-Out
+to store data elements temp
+
