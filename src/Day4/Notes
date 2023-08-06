@@ -1,0 +1,55 @@
+Design Patterns - 1994
+
+Gang of 4
+Erich Gamma
+Richard Helm
+Ralph Johnson
+John Vlisides
+
+Why?
+Code Reusability
+Maintainability
+Scalability
+Flexibility
+Standardization
+Best practices
+
+Types:
+Creational Patterns
+Structural Patterns
+Behavioral Patterns
+
+Creational Patterns - Deals with Creation of Objects
+Structural Patterns - Composition of Objects
+what does a class contain?
+wat are relationship of a class with other class? (Inheritance/Composition)
+Behavioral Patterns - Offers interactions between objects
+
+
+Creational Patterns
+1) Singleton Design Patterns
+    Ensure a class has only one instance and provides a global access to that instance
+    The class ensures that we hav single object get created
+
+    Why we need?
+    1) Managing shared resources - database connection. config
+    2) Global access to an object
+    3) Maintaining state  - ensure that state remains consistent
+
+    Advantages:
+    One instance
+    Global access
+    Reduced memory
+    Lazy initialization
+    Thread Safety
+
+
+    Factory Design Pattern
+    Exact class of objects in runtime
+    Client code will be isolated
+    Add/remove subclasses
+
+    Advantages:
+    Encapusalation
+    Loose coupling
+    Flexibility
