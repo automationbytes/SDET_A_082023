@@ -1,9 +1,18 @@
-.settings
-bin
+# Ignore Eclipse related files and directories
+.settings/
+bin/
 .classpath
 .project
 .metadata
-target
-out/
+
+# Ignore IntelliJ IDEA related files and directories
 *.iml
 .idea/
+/.idea/
+
+# Ignore Maven target directory
+/target/
+target/
+
+# Ignore any 'out' directory
+out/
