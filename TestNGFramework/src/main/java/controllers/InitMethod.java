@@ -13,7 +13,7 @@ import java.net.URI;
 
 public class InitMethod {
 
-    static String appUrl = System.getProperty("url");
+    static String appUrl = System.getProperty("url"); //runtime
 
     public static String baseURL = PropertyReader.readProperties("Url").toLowerCase();
     public static String browser = PropertyReader.readProperties("Browser").toLowerCase();
