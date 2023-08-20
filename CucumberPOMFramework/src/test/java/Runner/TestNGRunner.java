@@ -1,11 +1,10 @@
 package Runner;
 
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.DataProvider;
 
-@RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/Features/Demo.feature"},
         glue = {"StepDefn"},
@@ -19,5 +18,13 @@ import org.junit.runner.RunWith;
 )
 
 
-public class TestRunner {
+
+public class TestNGRunner extends AbstractTestNGCucumberTests {
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios(){
+        return super.scenarios();
+
+    }
+
 }

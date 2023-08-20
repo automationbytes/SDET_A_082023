@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.Assert;
 import org.checkerframework.checker.units.qual.C;
+import pages.HomePage;
 import pages.LoginPage;
 import util.ConfigReader;
 import webdriverfactory.DriverFactory;
@@ -14,6 +15,8 @@ public class MyStepdefs {
 
     private ConfigReader configReader = new ConfigReader();
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
+
+    private HomePage homePage = new HomePage(DriverFactory.getDriver());
 
 
     @Given("the user launches the NOPAdmin url")
@@ -41,5 +44,18 @@ public class MyStepdefs {
     @When("the user clicks on login button")
     public void theUserClicksOnLoginButton() {
         loginPage.clickLogin();
+    }
+
+    @Then("the user verifies the homepage logo")
+    public void theUserVerifiesTheHomepageLogo() {
+
+        Assert.assertTrue(homePage.homepageLogoverify());
+
+    }
+
+
+    @And("the user finally logouts the application")
+    public void theUserFinallyLogoutsTheApplication() {
+        homePage.clickLogout();
     }
 }
