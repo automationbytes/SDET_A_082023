@@ -1,0 +1,53 @@
+WebServices
+-----------
+
+
+Soap - Simple Object Access Protocol
+Its a protocol that defines a set of rules for structuring messages (xml)
+
+Rest - Representational State Transfer
+Its an architectural style not a protocol (xml, json, text)
+
+Methods
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+Status code - response code
+5 categories
+
+1xx - Informational Series
+2xx - Successful series
+3xx - Redirection series
+4xx - client error
+5xx - server error
+
+
+http://tosca-webservice-ng.azurewebsites.net/api/Shops_V4
+Base URL (Domain name)- http://tosca-webservice-ng.azurewebsites.net/
+Resource Path (end point)- api/Shops_V4
+Query Parameters -  q =   (&- combine more query)
+
+
+Json Path
+
+$	the root object/element
+@	the current object/element
+. or []	child operator
+..	recursive descent. JSONPath borrows this syntax from E4X.
+*	wildcard. All objects/elements regardless their names.
+[]	subscript operator - eg ($..[1])
+ XPath uses it to iterate over element collections and for predicates. In Javascript and JSON it is the native array operator.
+[,]	Union operator - $..[1,5,9]
+in XPath results in a combination of node sets. JSONPath allows alternate names or array indices as a set.
+
+
+[start:end:step]
+[start:] - start from the start value and it wil go til the end
+
+[:end] - display from zeroth value to the end value
+
+[:] - All values    -
+
+[1:4:2] - 1,3 values
+array slice operator borrowed from ES4.
+?()	applies a filter (script) expression.
+()	script expression, using the underlying script engine.
